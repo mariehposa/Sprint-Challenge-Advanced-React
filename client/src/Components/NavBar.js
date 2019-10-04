@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {DarkMode} from '../Hooks/DarkMode';
 
 export default function NavBar () {

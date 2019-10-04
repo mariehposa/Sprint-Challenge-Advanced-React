@@ -16,11 +16,11 @@ export default class App extends React.Component {
   componentDidMount() {
     axios.get(playerApi)
       .then(res => {
-        console.log(res.data)
+        //console.log(res.data)
         this.setState({ playerDetails: res.data });
       })
       .catch(err => {
-        console.log(err.message);
+        //console.log(err.message);
       })
   }
 

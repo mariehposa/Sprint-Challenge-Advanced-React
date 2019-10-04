@@ -7,7 +7,7 @@ export default class PlayerList extends React.Component {
         return (
             <ParentStyle>
                 {
-                    this.props.player.map(play => <PlayerCard player={play} /> ) 
+                    this.props.player.map(play => <PlayerCard key={play.name} player={play} /> ) 
                 }
             </ParentStyle>
         );

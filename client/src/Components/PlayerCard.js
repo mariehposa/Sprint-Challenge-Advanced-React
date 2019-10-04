@@ -1,10 +1,14 @@
 import React from 'react';
 
-export default function PlayerCard () {
-    const { name, country, searches } = this.props.player
-    return (
-        <div>
-
-        </div>
-    );
+export default class PlayerCard extends React.Component {
+    render () {
+        const { name, country, searches } = this.props.player;
+        return (
+            <div>
+                <h2>Name: {name}</h2>
+                <p>Country: {country}</p>
+                <p>Searches: {searches}</p>
+            </div>
+        );
+    }
 }

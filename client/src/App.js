@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios';
-import PlayerCard from './Components/PlayerCard';
+import PlayerList from './PlayerList';
 
 const playerApi = 'http://localhost:5000/api/players';
 export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      playerDetails: {},
+      playerDetails: [],
     };
   }
 
@@ -26,7 +26,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <PlayerCard player={this.state.playerDetails}/>
+        <PlayerList player={this.state.playerDetails}/>
       </div>
     );
   }

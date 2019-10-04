@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios';
+import PlayerCard from './Components/PlayerCard';
 
 const playerApi = 'http://localhost:5000/api/players';
 export default class App extends React.Component {

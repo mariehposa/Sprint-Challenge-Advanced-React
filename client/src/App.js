@@ -26,7 +26,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        
+        <PlayerCard player={this.state.playerDetails}/>
       </div>
     );
   }

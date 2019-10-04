@@ -31,5 +31,10 @@ describe('PlayerCard Component', () => {
     it('shows correct searches', () => {
         const elementWithSearches = tools.queryByText(/50/i);
         expect(elementWithSearches).toBeInTheDocument();
-      });
+    });
+
+    it('shows correct country', () => {
+        const elementWithCountry = tools.queryByText(/niger/i);
+        expect(elementWithCountry).toBeInTheDocument();
+    });
 })

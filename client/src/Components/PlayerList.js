@@ -1,14 +1,15 @@
 import React from 'react';
-import PlayerCard from './Components/PlayerCard';
+import PlayerCard from './PlayerCard';
+import { ParentStyle } from './Styles';
 
 export default class PlayerList extends React.Component {
     render () {
         return (
-            <div>
+            <ParentStyle>
                 {
                     this.props.player.map(play => <PlayerCard player={play} /> ) 
                 }
-            </div>
+            </ParentStyle>
         );
     }
 }

@@ -34,7 +34,7 @@ describe('PlayerCard Component', () => {
     });
 
     it('shows correct country', () => {
-        const elementWithCountry = tools.queryByText(/niger/i);
+        const elementWithCountry = tools.queryByText(/nigeri/i);
         expect(elementWithCountry).toBeInTheDocument();
     });
 })
